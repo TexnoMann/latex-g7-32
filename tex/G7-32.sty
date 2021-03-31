@@ -117,11 +117,11 @@
 \newenvironment*{executors}{%
   \Executors
   % There will be subheadings like:
-  % 
+  %
   % * perhaps -- Руководитель темы
   % * Исполнители:
   % * optionally -- Соисполнители
-  % 
+  %
   % They should be printed without an indent.
   \setlength{\parindent}{0pt}
   % This environment could be useful to change other parameters as
@@ -150,7 +150,7 @@
 
 % Grif
 \newcommand\Nir@Grif{\vspace{-2ex}}                          % Top secret if needed, default blank
-\newcommand*\NirGrif[1]{\renewcommand\Nir@Grif{#1}}             %%  To change grif 
+\newcommand*\NirGrif[1]{\renewcommand\Nir@Grif{#1}}             %%  To change grif
 
 % Confirm text
 \newcommand*\Nir@Confirm{%
@@ -195,8 +195,8 @@
 }
 \newcommand*\NirIsAnnotacion[1]{\renewcommand\Nir@AnnOtchet{#1}} %%Если отчёт аннотационный
 
-% Report part 
-\newcommand*\Nir@PartNum{\vspace{-2ex}}     % Part name and number 
+% Report part
+\newcommand*\Nir@PartNum{\vspace{-2ex}}     % Part name and number
 \newcommand\NirPartNum[2]{\renewcommand\Nir@PartNum{#1 #2}}     % to change finalname  text
 
 % Report Year
@@ -208,7 +208,7 @@
 
 \newcommand\Nir@BossStamp{
     \parbox[t]{.49\linewidth}{
-        {\centering\MakeUppercase{\Nir@Confirm} % Confirmation name 
+        {\centering\MakeUppercase{\Nir@Confirm} % Confirmation name
 
         }
         \vspace{5mm}
@@ -236,7 +236,7 @@
     \renewcommand\Nir@BossPost{#2}\renewcommand\Nir@BossName{#3}
     \renewcommand\Nir@BossStamp{
         \parbox[t]{#1\linewidth}{
-            {\centering\MakeUppercase{\Nir@Confirm} % Confirmation name 
+            {\centering\MakeUppercase{\Nir@Confirm} % Confirmation name
 
             }
             \vspace{5mm}
@@ -306,7 +306,7 @@
 
 %fix for first time compilation
 \newcommand\Nir@Title{\vspace{-2ex}}
-\newcommand\Nir[1]{\renewcommand\Nir@Title{#1}}  %Название НИР, не совместимо с \NirTitle  
+\newcommand\Nir[1]{\renewcommand\Nir@Title{#1}}  %Название НИР, не совместимо с \NirTitle
 \newcommand\Nir@TitleAndSubject{
     \vspace{5ex}
 \hrule\par\vspace{1ex}
@@ -387,7 +387,7 @@
 
 
 
-%Title page 
+%Title page
 \newenvironment*{titlepage}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -421,15 +421,15 @@
 }
 % Usage example from virens
 % <http://mydebianblog.blogspot.ru/2008/09/732-2001-latex.html>:
-% 
+%
 %     \NirStage{Этап \No 1.1}{промежуточный}{"Обзор современного состояния торсионных наногенераторов"}
 %
 % If you are using pdflatex, it might require putting the first Russian letter in braces (see
 % <http://ctan.uni-altai.ru/macros/latex/contrib/mfirstuc/mfirstuc-manual.html#sec:utf8>),
 % but if you are using xelatex, you must be OK:
-% 
+%
 %     \NirStage{{Э}тап \No 1.1}{промежуточный}{"Обзор современного состояния торсионных наногенераторов"}
-% 
+%
 % There, the resulting formatting violates the current standard style;
 % it can be seen at
 % http://bp0.blogger.com/_hM8AMxgJLzw/SH3c4fS0zhI/AAAAAAAAAs0/sH6kGPItCAk/s1600-h/G7-32NIRreportexample.jpg
@@ -481,4 +481,3 @@
 }%
 
 \makenomenclature%
-

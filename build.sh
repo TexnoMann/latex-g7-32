@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./utils/latexmkmod -r .latexmkmodrc "$@" -- rpz.tex
+./utils/latexmkmod/latexmkmod.pl -r .latexmkmodrc "$@" -- rpz.tex
