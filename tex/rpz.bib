@@ -1,5 +1,497 @@
 @Comment А вот так оформляется библиография при помощи BibTeX.
 
+
+@Inbook{Handbook,
+  abstract = {A fundamental requirement for the success of a manipulation task is the capability to handle the physical contact between a robot and the environment. Pure motion control turns out to be inadequate because the unavoidable modeling errors and uncertainties may cause a rise of the contact force, ultimately leading to an unstable behavior during the interaction, especially in the presence of rigid environments. Force feedback and force control becomes mandatory to achieve a robust and versatile behavior of a robotic system in poorly structured environments as well as safe and dependable operation in the presence of humans. This chapter starts from the analysis of indirect force control strategies, conceived to keep the contact forces limited by ensuring a suitable compliant behavior to the end effector, without requiring an accurate model of the environment. Then the problem of interaction tasks modeling is analyzed, considering both the case of a rigid environment and the case of a compliant environment. For the specification of an interaction task, natural constraints set by the task geometry and artificial constraints set by the control strategy are established, with respect to suitable task frames. This formulation is the essential premise to the synthesis of hybrid force/motion control schemes.},
+  author = {Villani, Luigi and {De Schutter}, Joris},
+  doi = {10.1007/978-3-319-32552-1_9},
+  isbn = {9783319325521},
+  journal = {Springer Handbook of Robotics},
+  mendeley-groups = {vkr_articles},
+  pages = {195--219},
+  title = {{Force control}},
+  year = {2016}
+}
+
+}
+
+@article{StarmidgoliImpedanceControl,
+  abstract = {In contexts where robots share their workspace with humans, safety is of utmost importance. Consequently, in recent years, a big impulse has been given to the design of human-friendly robots by involving both mechanical and control design aspects. Regarding controller design, this often involves introducing compliance and ensuring asymptotic stability using an interaction control scheme and passivity theory. Moreover, when human operators physically interact with the robot during work, strict safety measures become necessary with some of these including power and force limitations [1]. In this letter, a novel impedance control technique for collaborative robots is presented. The featured controller allows a safe human-robot interaction through energy and power limitations, assuring passivity through energy tanks. The proposed controller is evaluated with a KUKA LWR 4+ arm in a comanipulation environment.},
+  author = {Raiola, Gennaro and Cardenas, Carlos Alberto and Tadele, Tadele Shiferaw and {De Vries}, Theo and Stramigioli, Stefano},
+  doi = {10.1109/LRA.2018.2795639},
+  file = {:media/files/Review/CoBots/development.pdf:pdf},
+  issn = {23773766},
+  journal = {IEEE Robotics and Automation Letters},
+  keywords = {Robot safety,compliance and impedance control,physical human-robot interaction},
+  mendeley-groups = {Colaborative control},
+  number = {2},
+  pages = {1237--1244},
+  publisher = {IEEE},
+  title = {{Development of a Safety- and Energy-Aware Impedance Controller for Collaborative Robots}},
+  volume = {3},
+  year = {2018}
+}
+
+
+@article{StarmidgoliImpedanceControl2,
+  abstract = {To this day, most robots are installed behind safety fences, separated from the human. New use-case scenarios demand for collaborative robots, e.g. to assist the human with physically challenging tasks. These robots are mainly installed in work-environments with limited space, e.g. existing production lines. This brings certain challenges for the control of such robots. The presented work addresses a few of these challenges, namely: stable and safe behaviour in contact scenarios; avoidance of restricted workspace areas; prevention of joint limits in automatic mode and manual guidance. The control approach in this paper extents an Energy-aware Impedance controller by repulsive potential fields in order to comply with Cartesian and joint constraints. The presented controller was verified for a KUKA LBR iiwa 7 R800 in simulation as well as on the real robot.},
+  author = {Hjorth, Sebastian and Lachner, Johannes and Stramigioli, Stefano and Madsen, Ole and Chrysostomou, Dimitrios},
+  doi = {10.1109/iros45743.2020.9341561},
+  file = {:home/texnoman/Downloads/09341561.pdf:pdf},
+  isbn = {9781728162126},
+  mendeley-groups = {Colaborative control},
+  pages = {7152--7158},
+  title = {{An Energy-based Approach for the Integration of Collaborative Redundant Robots in Restricted Work Environments}},
+  year = {2021}
+}
+
+@article{Ha1999,
+abstract = {When a real robot manipulator is mathematically modeled, uncertainties are not avoidable. The uncertainties are often nonlinear and time-varying. The uncertain factors come from imperfect knowledge of system parameters, payload change, friction, external disturbance, and etc. We proposed a class of robust hybrid controls of manipulators and provided the stability analysis in the preceeding work. In the work, we apply the result of previous work to a real robot system. The robust control algorithms and PID controls are experimentally implemented to SCARA type manipulator. The experimental results are compared with computer simulation result.},
+author = {Ha, In Chul and Han, Myung Chul},
+doi = {10.1109/iros.1999.812755},
+file = {:home/texnoman/Downloads/00812755.pdf:pdf},
+journal = {IEEE International Conference on Intelligent Robots and Systems},
+mendeley-groups = {vkr_articles},
+pages = {659--664},
+title = {{Position/force control for robot manipulators applying robust control algorithms}},
+volume = {2},
+year = {1999}
+}
+
+@article{indirect_to_direct,
+abstract = {The leading industrial robotics community seems to be ready for a big step in designing enhanced control systemss namely, the integration of force control capabilities. This paper presents a roadmap for eeective realization of such a step where the key knots from motion control to interaction control are enlightened. In the framework of model-based task space control, compliance control and impedance control are introduced as the basic strategies for indirect force control. Then, direct force control strategies are considered which are obtained from motion control schemes suitably modiied by the closure of an outer force regulation feedback l o o p . A k ey feature is the coverage of six-degree-of-freedom interaction tasks.},
+author = {Siciliano, Bruno and Villani, Luigi and Federico, Napoli},
+journal = {Robotica},
+mendeley-groups = {vkr_articles},
+number = {May 2014},
+pages = {1--36},
+title = {{From Indirect to Direct Force Control : A Roadmap for Enhanced Industrial Robots}},
+year = {2000}
+}
+
+@article{Khatib1986_force_control,
+author = {Khatib, Oussama and Burdick, Joel},
+journal = {Architecture},
+mendeley-groups = {vkr_articles},
+number = {5},
+pages = {1381--1386},
+title = {{Motion and Force Control of Robot Manipulators Oussama Khatib and Joel Burdick Artificial Intelligence Laboratory Stanford University Computer Science Department}},
+year = {1986}
+}
+
+@article{Takahashi2008,
+abstract = {In this paper we propose a new robust force and position control method for property-unknown objects grasping. The proposed control method is capable of selecting the force control or position control, and smooth and quick switching according to the amount of the external force. The proposed method was applied to adaptive grasping by three-fingered hand which has 12 DOF, and the experimental results revealed that the smooth collision process and the stable grasping is realized even if the precise surface position, the mass and the stiffness are unknown. In addition a new algorithm determines the grasp force according to the "slip" measured with the tactile sensor and the viscoelastic media on the fingertip. This algorithm works at starting and stationary state, so the friction and mass unknown object grasping is realized by the effectual force. {\textcopyright}2008 IEEE.},
+author = {Takahashi, Taro and Tsuboi, Toshimitsu and Kishida, Takeo and Kawanami, Yasunori and Shimizu, Satoru and Iribe, Masatsugu and Fukushima, Tetsuharu and Fujita, Masahiro},
+doi = {10.1109/ROBOT.2008.4543219},
+isbn = {9781424416479},
+issn = {10504729},
+journal = {Proceedings - IEEE International Conference on Robotics and Automation},
+keywords = {Force Control,Force and Tactile Sensing,Grasping},
+mendeley-groups = {vkr_articles},
+pages = {264--271},
+title = {{Adaptive grasping by multi fingered hand with tactile sensor based on robust force and position control}},
+year = {2008}
+}
+
+@article{Villani2016,
+abstract = {A fundamental requirement for the success of a manipulation task is the capability to handle the physical contact between a robot and the environment. Pure motion control turns out to be inadequate because the unavoidable modeling errors and uncertainties may cause a rise of the contact force, ultimately leading to an unstable behavior during the interaction, especially in the presence of rigid environments. Force feedback and force control becomes mandatory to achieve a robust and versatile behavior of a robotic system in poorly structured environments as well as safe and dependable operation in the presence of humans. This chapter starts from the analysis of indirect force control strategies, conceived to keep the contact forces limited by ensuring a suitable compliant behavior to the end effector, without requiring an accurate model of the environment. Then the problem of interaction tasks modeling is analyzed, considering both the case of a rigid environment and the case of a compliant environment. For the specification of an interaction task, natural constraints set by the task geometry and artificial constraints set by the control strategy are established, with respect to suitable task frames. This formulation is the essential premise to the synthesis of hybrid force/motion control schemes.},
+author = {Villani, Luigi and {De Schutter}, Joris},
+doi = {10.1007/978-3-319-32552-1_9},
+file = {:home/texnoman/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Villani, De Schutter - 2016 - Force control.pdf:pdf},
+isbn = {9783319325521},
+journal = {Springer Handbook of Robotics},
+mendeley-groups = {vkr_articles},
+pages = {195--219},
+title = {{Force control}},
+year = {2016}
+}
+
+@article{Salisbury1980,
+abstract = {A method of actively controlling the apparent stiffness of a manipulator end effector is presented. The approach allows the programmer to specify the three translational and three rotational stiffness of a frame located arbitrarily in hand coordinates. Control of the nominal position of the hand then permits simultaneous position and force control. Stiffness may be changed under program control to match varying task requirements. A rapid servo algorithm is made possible by transformation of the problem into joint space at run time. Applications examples are given.},
+author = {Salisbury, J. Kenneth},
+doi = {10.1109/cdc.1980.272026},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/salisbury1980.pdf:pdf},
+issn = {01912216},
+journal = {Proceedings of the IEEE Conference on Decision and Control},
+mendeley-groups = {vkr_articles},
+pages = {95--100},
+title = {{Active Stiffness Control of a Manipulator in Cartesian Coordinates.}},
+volume = {1},
+year = {1980}
+}
+
+@article{Yoshikawa1987,
+abstract = {For the application of robot manipulators to complex tasks, it is often necessary to control not only the position of a manipulator but also the force exerted by the hand on an object. For this purpose, Raibert and Craig have proposed the hybrid position/force control method. In this method, however, the manipulator dynamics has not been taken into account rigorously. The dynamic hybrid control method is proposed, which takes the manipulator dynamics into consideration. Constraints on the end effector are described by a set of constraint hypersurfaces. Then the basic equations for dynamic hybrid control are derived. It is shown that if the manipulator is not in a singular configuration, the desired position and force at the end effector can be simultaneously realized. Finally, a basic structure of the dynamic hybrid control system with a servo compensator is given. Copyright {\textcopyright} 1987 by The Institute of Electrical and Electronics Engineers, Inc.},
+author = {Yoshikawa, Tsuneo},
+doi = {10.1109/JRA.1987.1087120},
+file = {:home/texnoman/Downloads/yoshikawa1987.pdf:pdf},
+issn = {08824967},
+journal = {IEEE Journal on Robotics and Automation},
+mendeley-groups = {vkr_articles},
+number = {5},
+pages = {386--392},
+title = {{Dynamic Hybrid Position/Force Control of Robot Manipulators—Description of Hand Constraints and Calculation of Joint Driving Force}},
+volume = {3},
+year = {1987}
+}
+
+@article{RaibertMH;Craig2015,
+author = {{Raibert, MH; Craig}, JJ;},
+mendeley-groups = {vkr_articles},
+number = {June 1981},
+title = {{Hybrid Position / Force Control of Manipulators}},
+volume = {102},
+year = {2015}
+}
+
+
+@article{Yoshikawa1991,
+abstract = {Much research has been done recently on the analysis and design of multifingered robot hands. Several algorithms for determining the fingertip force for a given task have also been proposed. But, the grasping and manipulating forces involved in the manipulation of objects by robotic and human hands have not been defined in a physically reasonable way. The purpose of this paper is to propose a new definition of grasping and manipulating forces for multifingered robot hands. First, a short discussion of the grasping and manipulating forces for two-fingered hands with linear motion is given to explain the motivation more clearly and to give the basic idea of the new definition. Then, for three-fingered hands, based on a representation of the internal force, the grasping force is defined as an internal force that satisfies the static friction constraint. The concept of grasp mode is also introduced. The manipulating force is then defined as a fingertip force that satisfies the following three conditions: 1) It produces the specified resultant force. 2) It is not in the inverse direction of the grasping force. 3) It is orthogonal to the grasping force component. An algorithm for decomposing a given fingertip force into manipulating and grasping forces is presented. Extensions of the result to cases of two-fingered hands with planar motion and four-fingered hands are discussed. Finally, a simple example of synthesizing fingertip force for a given manipulation task is given to illustrate the usefulness of the proposed definition. {\textcopyright} 1991 IEEE},
+author = {Yoshikawa, Tsuneo and Nagai, Kiyoshi},
+doi = {10.1109/70.68071},
+issn = {1042296X},
+journal = {IEEE Transactions on Robotics and Automation},
+mendeley-groups = {vkr_articles},
+number = {1},
+pages = {67--77},
+title = {{Manipulating and Grasping Forces in Manipulation by Multifingered Robot Hands}},
+volume = {7},
+year = {1991}
+}
+
+@inproceedings{Park1989,
+abstract = {The authors present an efficient computational procedure to determine the finger force of a three-fingered robot hand in object manipulation. They first define initial grasping force as the force needed to hold a massless object. Then grasping force and contact normal during manipulation are determined from initial grasping force and initial contact normal by tracking the object displacement. Manipulation force, the finger force required to manipulate an object and to compensate for object weight, is computed by the generalized matrix inverse method. Optimal internal force, when necessary, is determined from the grasping force during manipulation without explicitly solving the optimization problem. The computational burden for determining finger force is less than that of previous methods.},
+author = {Park, Young C. and Starr, Gregory P.},
+booktitle = {Proceedings, 1989 International Conference on Robotics and Automation},
+doi = {10.1109/robot.1989.100100},
+isbn = {0-8186-1938-4},
+mendeley-groups = {vkr_articles},
+number = {June 1981},
+pages = {930--935},
+publisher = {IEEE Comput. Soc. Press},
+title = {{Finger force computation for manipulation of an object by a multifingered robot hand}},
+url = {http://ieeexplore.ieee.org/document/100100/},
+volume = {102},
+year = {1989}
+}
+
+@article{Yamada1995,
+abstract = {Numerous issues remain to be solved in improving the efficiency of the complex assembly processes existing in the automobile chassis and drivetrain system unit plants due to their being labor intensive and their reliance on the dexterity of human operators. Equally important, factors such as labor shortages and reduced work hours are expected to become more of an issue in the coming years. It is extremely important, therefore, to address the qualitative and quantitative issues of labor in the design and manufacturing aspects of the assembly line, as well as the issue of the assembly operators themselves. To address these issues, we have developed and put into practical use a multi-arm type assembly robot capable of handling complex and both-hands assembly operations. In this paper, we will present its development concept, performance, and examples of actual applications.},
+author = {Yamada, Y. and Nagamatsu, S. and Sato, Y.},
+doi = {10.1109/robot.1995.525592},
+isbn = {0780319656},
+issn = {10504729},
+journal = {Proceedings - IEEE International Conference on Robotics and Automation},
+mendeley-groups = {vkr_articles},
+pages = {2224--2229},
+title = {{Development of multi-arm robots for automobile assembly}},
+volume = {3},
+year = {1995}
+}
+
+@article{Yoshikawa1990,
+abstract = {A cooperative dynamic hybrid control method for multimotion robotic mechanisms handling a single object whose motion is constrained by environment is discussed. This method takes the manipulator dynamics and object dynamics into consideration and is for controlling the motion of the object as well as for controlling the constraint force and the internal force. The following results are obtained. (1) The force and kinematic relations are established for arms grasping and manipulating an object using various types of end effector. (2) Using the first result, a nonlinear state feedback law for the joint driving force that linearizes and decouples the robot system with respect to the object motion, constraint force, and internal force is given. A basic structure of the dynamic hybrid control system with a servo compensator is presented. The effectiveness of the proposed approach has been examined by a simple experiment. These results are useful for the fine manipulation of an object, in sense that one can specify the controller characteristics, such as the command response property and the robustness to modeling errors, uncertainties, and disturbances, independently for the individual specification of the object motion, the interaction between the object and its environment, and the grasping of the object.},
+author = {Yoshikawa, Tsuneo and Zheng, Xinzhi},
+doi = {10.1177/027836499301200302},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/coordinated-dynamic-hybrid-positionforce-control-for-multiple-ro.pdf:pdf},
+isbn = {0818620617},
+issn = {0278-3649},
+mendeley-groups = {vkr_articles},
+pages = {1178--1183},
+title = {{Coordinated dynamic hybrid position/force control for multiple robot manipulators handling one constrained object}},
+year = {1990}
+}
+
+@article{coop_manipulator_survey,
+abstract = {Recent advances in both anthropomorphic robots and bimanual industrial manipulators had led to an increased interest in the specific problems pertaining to dual arm manipulation. For the future, we foresee robots performing human-like tasks in both domestic and industrial settings. It is therefore natural to study specifics of dual arm manipulation in humans and methods for using the resulting knowledge in robot control. The related scientific problems range from low-level control to high level task planning and execution. This review aims to summarize the current state of the art from the heterogenous range of fields that study the different aspects of these problems specifically in dual arm manipulation. {\textcopyright} 2012 Elsevier B.V. All rights reserved.},
+author = {Smith, Christian and Karayiannidis, Yiannis and Nalpantidis, Lazaros and Gratal, Xavi and Qi, Peng and Dimarogonas, Dimos V. and Kragic, Danica},
+doi = {10.1016/j.robot.2012.07.005},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/DualSurvey.pdf:pdf},
+issn = {09218890},
+journal = {Robotics and Autonomous Systems},
+keywords = {Control,Domestic manipulation,Dual arm robots,Learning,Modelling,Planning,Survey},
+mendeley-groups = {vkr_articles},
+number = {10},
+pages = {1340--1353},
+title = {{Dual arm manipulation - A survey}},
+volume = {60},
+year = {2012}
+}
+
+@article{Lee1991,
+abstract = {An approach to a self-reconfigurable manipulator system which dynamically changes its topology according to given task requirements is presented. The proposed self-reconfiguration differs from that of conventional reconfigurable robots, in that it does not need to replace and reassemble modularized links to build a robot of desirable mechanical structure, but it customizes a multiple redundant manipulator system by reconfiguring its mechanical structure through serial, parallel, and bracing mechanisms of multiple arm cooperation. The authors present a methodology of generating serial, parallel, and bracing structures for a self-reconfigurable dual-arm system based on manipulabilities and resistivities. Such manipulabilities and resistivities quantify the efficiency and capability of a self-reconfigurable dual-arm system in generating the Cartesian motion and static force, thereby providing information essential to customizing a dual-arm topology suitable for a given task. An example is presented.},
+author = {Lee, Sukhan and Kim, Sungbok},
+doi = {10.1109/robot.1991.131573},
+isbn = {081862163X},
+journal = {Proceedings - IEEE International Conference on Robotics and Automation},
+mendeley-groups = {vkr_articles},
+pages = {164--169},
+title = {{A self-reconfigurable dual-arm system}},
+volume = {1},
+year = {1991}
+}
+
+@article{Ajoudani2017,
+abstract = {In humanoids and other redundant robots interacting with the environment, one can often choose between different configurations and control parameters to achieve a given task. A classic tool to describe specifications of the desired force/displacement behavior in such problems is the stiffness ellipsoid, whose geometry is affected by the choice of parameters in both joint control and redundancy resolution-namely, gains and angles. As is well known, impedance control techniques can regulate gains to realize any desired shape of the Cartesian stiffness ellipsoid at the end-effector, so that robot geometry selection could appear secondary. However, humans do not use this possibility: To control the stiffness of our arms, we predominantly use arm configurations. Why is that, and does it makes sense to do the same in robots? To understand this discrepancy, we provide a more complete analysis of the task-space force/deformation behavior of compliant redundant arms to illustrate why the arm geometry plays a dominant role in interaction capabilities of robots. We introduce the notion of allowable Cartesian force/displacement ("stiffness feasibility") regions (SFR) for compliant robots with given torque boundaries.We show that different robot configurations modify such regions and explore the role of robot geometry in achieving an appropriate SFR for the task at hand. The novel concepts and definitions are first illustrated in simulations. Experimental results are then provided to verify the effectiveness of the proposed Cartesian force and stiffness control.},
+author = {Ajoudani, Arash and Tsagarakis, Nikos G. and Bicchi, Antonio},
+doi = {10.1109/TRO.2017.2708087},
+issn = {15523098},
+journal = {IEEE Transactions on Robotics},
+keywords = {Cartesian stiffness control,Robot configuration,Torque boundaries,Torque controlled robots},
+mendeley-groups = {Colaborative control},
+number = {6},
+pages = {1483--1490},
+title = {{Choosing poses for force and stiffness control}},
+volume = {33},
+year = {2017}
+}
+
+@article{AzizZadeh2019,
+abstract = {This paper presents a centralized force/position controller for a heavy object manipulation in a multi-manipulator cooperative system. System dynamics of cooperative manipulating tasks comes from complex interaction of the object with robot manipulators and the environment. In this paper, focussing on the interaction effects in the system as well as by noting the role of imposed kinematics and force constraints, manipulator coordination and minimizing internal forces a pre-designed impedance behaviour between manipulator end effectors and the object is developed. The stability of the feedback system is then presented through passivity theorem and simulation results are finally provided with three manipulators handling the object supporting the relevance of the theoretical results.},
+author = {AzizZadeh, Hamid and Menhaj, Mohammad Bagher and Talebi, Heidar Ali},
+doi = {10.1080/00051144.2019.1580853},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/azizzadeh2019.pdf:pdf},
+issn = {00051144},
+journal = {Automatika},
+keywords = {Cooperative manipulators,centralized control,force/position control,interaction dynamics,kinematics},
+mendeley-groups = {vkr_articles},
+number = {1},
+pages = {113--123},
+title = {{Model-based force/position control of cooperative manipulation systems}},
+url = {https://doi.org/10.1080/00051144.2019.1580853},
+volume = {60},
+year = {2019}
+}
+
+@article{Faroni2016,
+abstract = {In this paper, we present a new approach to manipulability maximisation for a dual-arm manipulator, which takes into account the manipulability of the overall task. This method tries to overcome the drawbacks given by traditional approaches, which optimise the manipulability of the local configuration of the manipulator, but do not take into account the rest of the task, even though it is known a priori. In this way, it is possible to improve the average manipulability index over the task. The method is applied to a dual-arm system, wherein the task is expressed in terms of relative poses between the end-effectors. For this reason, the kinematic of the system is solved by means of the relative Jacobian.},
+author = {Faroni, Marco and Beschi, Manuel and Visioli, Antonio and {Molinari Tosatti}, Lorenzo},
+doi = {10.1109/ETFA.2016.7733725},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/faroni2016.pdf:pdf},
+isbn = {9781509013142},
+issn = {19460759},
+journal = {IEEE International Conference on Emerging Technologies and Factory Automation, ETFA},
+mendeley-groups = {vkr_articles},
+title = {{A global approach to manipulability optimisation for a dual-arm manipulator}},
+volume = {2016-Novem},
+year = {2016}
+}
+
+@article{Sun2002,
+abstract = {Coordination of multirobot systems has received extensive studies in the past decade. The majority of previous approaches require a complex setup of the hybrid position/force-control architecture, and have not fully addressed the coordination problem when the robots are not kinematically constrained but perform a common task. In this paper, we propose to use a new coordination scheme that is more straightforward and easier to implement and is applicable to a wider area. The basic idea of the new coordination strategy is to use the concept of motion synchronization, since the problem of coordinating multiple manipulators is basically the problem of maintaining certain kinematic relationships amongst robots. The key to the success of the new method is to ensure that each manipulator tracks its desired trajectory while synchronizing its motion with other manipulators' motions, so that differential (or synchronization) position errors amongst manipulators converge to zero. The controller, designed by incorporating the cross-coupling technology into an adaptive-control architecture, successfully guarantees asymptotic convergence to zero of both position tracking and synchronization errors simultaneously. Experiments and simulations on multirobot assembly systems demonstrate the effectiveness of the approach.},
+author = {Sun, Dong and Mills, James K.},
+doi = {10.1109/TRA.2002.802229},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/01044363.pdf:pdf},
+issn = {1042296X},
+journal = {IEEE Transactions on Robotics and Automation},
+keywords = {Adaptive control,Coordination,Cross-coupling,Multirobot,Synchronization},
+mendeley-groups = {vkr_articles},
+number = {4},
+pages = {498--510},
+publisher = {IEEE},
+title = {{Adaptive synchronized control for coordination of multirobot assembly tasks}},
+volume = {18},
+year = {2002}
+}
+
+@article{Pfeffer1993,
+abstract = {Many tasks are difficult or impossible for 'one-armed' robots, for example, assembly with long parts. Multi-armed robots can do such tasks well, but only if both robot and controls are systematically designed for cooperation. We have built such a two-armed robot. We present its design and its experimental performance. The manipulators have added drivetrain flexibility to aid studying its effects on robot cooperation. The control system is a four level hierarchy: joint, arm, object, and task levels. The joint level handles flexibility via joint-torque control. The arm level uses nonlinear end-point feedback to control tip forces and positions. The object level manages the object via object impedance control. The task level directs multistep tasks autonomously. Experiments are shown for each level, culminating with a 'two-handed' insertion of a long part into a deep hole.},
+author = {Pfeffer, Lawrence E. and Cannon, Robert H.},
+doi = {10.1109/robot.1993.291839},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/experiments-with-a-dualarmed-cooperative-flexibledrivetrain-robo.pdf:pdf},
+isbn = {0818634529},
+issn = {10504729},
+journal = {Proceedings - IEEE International Conference on Robotics and Automation},
+mendeley-groups = {vkr_articles},
+pages = {601--608},
+title = {{Experiments with a dual-armed, cooperative, flexible-drivetrain robot system}},
+volume = {3},
+year = {1993}
+}
+
+@article{Siciliano2000,
+abstract = {The leading industrial robotics community seems to be ready for a big step in designing enhanced control systemss namely, the integration of force control capabilities. This paper presents a roadmap for eeective realization of such a step where the key knots from motion control to interaction control are enlightened. In the framework of model-based task space control, compliance control and impedance control are introduced as the basic strategies for indirect force control. Then, direct force control strategies are considered which are obtained from motion control schemes suitably modiied by the closure of an outer force regulation feedback l o o p . A k ey feature is the coverage of six-degree-of-freedom interaction tasks.},
+author = {Siciliano, Bruno and Villani, Luigi and Federico, Napoli},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/From_Indirect_to_Direct_Force_Control_A_Roadmap_fo.pdf:pdf},
+journal = {Robotica},
+mendeley-groups = {vkr_articles},
+number = {May 2014},
+pages = {1--36},
+title = {{From Indirect to Direct Force Control : A Roadmap for Enhanced Industrial Robots}},
+year = {2000}
+}
+
+@article{Spong2006,
+author = {Spong, Mark W. and Hutchinson, Seth and Vidyasagar, M.},
+doi = {10.1109/MCS.2006.252815},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/Spong-RobotmodelingandControl.pdf:pdf},
+issn = {1066033X},
+journal = {IEEE Control Systems},
+mendeley-groups = {Colaborative control},
+number = {6},
+pages = {113--115},
+title = {{Robot modeling and control}},
+volume = {26},
+year = {2006}
+}
+
+@article{Yoshikawa2000,
+abstract = {The state of the art of force control for robot manipulators is surveyed in this article. An overview and a unified description of the two major approaches to force control are presented. Several research topics related to force control are also surveyed.},
+author = {Yoshikawa, Tsuneo},
+doi = {10.1109/robot.2000.844062},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/force-control-of-robot-manipulators.pdf:pdf},
+isbn = {0780358864},
+issn = {10504729},
+journal = {Proceedings - IEEE International Conference on Robotics and Automation},
+mendeley-groups = {vkr_articles},
+number = {April},
+pages = {220--226},
+title = {{Force control of robot manipulators}},
+volume = {1},
+year = {2000}
+}
+
+
+@Comment cooperative control
+@article{Bonitz1996,
+abstract = {An internal force-based impedance control scheme for cooperating manipulators is introduced which controls the motion of the objects being manipulated and the internal force on the objects. The controller enforces a relationship between the velocity of each manipulator and the internal force on the manipulated objects. Each manipulator is directly given the properties of an impedance by the controller; thus, eliminating the gain limitation inherent in the structure of previously proposed schemes. The controller uses the forces sensed at the robot end effectors to compensate for the effects of the objects' dynamics and to compute the internal force using only kinematic relationships. Thus, knowledge of the objects' dynamics is not required. Stability of the system is proven using Lyapunov theory and simulation results are presented validating the proposed concepts. The effect of computational delays in digital control implementations is analyzed vis-{\`{a}}-vis stability and a lower bound derived on the size of the desired manipulator inertia relative to the actual manipulator endpoint inertia. The bound is independent of the sample time. {\textcopyright} 1996 IEEE.},
+author = {Bonitz, Robert G. and Hsia, T. C.},
+doi = {10.1109/70.481752},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/zcontrol.pdf:pdf},
+issn = {1042296X},
+journal = {IEEE Transactions on Robotics and Automation},
+mendeley-groups = {vkr_articles},
+number = {1},
+pages = {78--89},
+title = {{Internal force-based impedance control for cooperating manipulators}},
+volume = {12},
+year = {1996}
+}
+
+@article{Erhart2015,
+abstract = {The load distribution strategy in cooperative manipulation tasks allocates suitable force and torque setpoints to an ensemble of manipulators in order to implement a desired action on the manipulated object. Due to the manipulator redundancy, the load distribution computed by means of a generalized inverse of the grasp matrix is not uniquely determined. Controversial results on the nonsqueezing property of specific load distributions exist in the literature. In this paper, we propose a new paradigm for the analysis of internal wrenches based on the kinematic constraints imposed to the manipulator ensemble. We unify previous results by showing that there exists no unique nonsqueezing load distribution and illustrate the consequences of our findings by means of several examples. In particular, the presented results provide a new perspective on the decomposition of interaction forces into internal and external components as required for cooperative multimanipulator control schemes.},
+author = {Erhart, Sebastian and Hirche, Sandra},
+doi = {10.1109/TRO.2015.2459412},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/07206596.pdf:pdf},
+issn = {15523098},
+journal = {IEEE Transactions on Robotics},
+keywords = {Cooperative manipulators,Load distribution,grasping,internal stress,kinematics},
+mendeley-groups = {vkr_articles},
+number = {5},
+pages = {1238--1243},
+publisher = {IEEE},
+title = {{Internal Force Analysis and Load Distribution for Cooperative Multi-Robot Manipulation}},
+volume = {31},
+year = {2015}
+}
+
+@article{Kido2010,
+abstract = {Some operations such as transferring a heavy object require a Dual-Arm robot instead of a Single-Arm robot. Impedance control is good for controlling a robot interacting with the environment. Passivity is an important requirement for the safety of the people, environment and robots themselves. If the system does not satisfy passivity, high amount of energy has a chance of flowing from the robot to the environment. To prevent such accident, we control the coefficient of the desired velocity field according to the total energy of the system. We also limit the contact force between the object and the environment. In this paper, we propose a new passive control method for object transfer by Dual-Arm robot. Our new method assumes the following four conditions: (a)the system has two manipulators; (b)the controller is based on impedance control; (c)the system keeps passivity; (d)the trajectory of the object is designed with velocity field. Simulations of two robots with 3 D.O.F. holding an object interacting with an unknown stiff wall show that the system controlled with our new method satisfies passivity. Moreover, when the system is kept in a steady-state, we can obtain the relation equation between the energy of the system and the contact force. Computer simulations also validated the correctness of the relationship. {\textcopyright} 2010 SICE.},
+author = {Kido, Kosuke and Nagano, Akinori and Luo, Zhi Wei},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/05602441.pdf:pdf},
+isbn = {9784907764364},
+journal = {Proceedings of the SICE Annual Conference},
+keywords = {Component,Cooperative control,Dual arm,Impedance control,Mechanical system,Passivity},
+mendeley-groups = {vkr_articles},
+number = {4},
+pages = {423--426},
+publisher = {IEEE},
+title = {{Passive control of a Dual-Arm cooperative robot}},
+year = {2010}
+}
+
+@article{Sun1996,
+abstract = {A new approach for modeling and cooperating two manipulators handling a deformable object is presented. Based on the decomposition of a deformable body into a reference component and a deformation component, a general deformable model is developed and the complex control task is divided into two subtasks, i.e., the control of the reference motion and the control of the deformations. The position/force controllers and a null-space control law are proposed and demonstrated in the simulations.},
+author = {Sun, Dong and Shi, Xiaolun and Liu, Yunhui},
+doi = {10.1109/robot.1996.506514},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/00506514.pdf:pdf},
+issn = {10504729},
+journal = {Proceedings - IEEE International Conference on Robotics and Automation},
+mendeley-groups = {vkr_articles},
+number = {April},
+pages = {2346--2351},
+title = {{Modeling and cooperation of two-arm robotic system manipulating a deformable object}},
+volume = {3},
+year = {1996}
+}
+
+@article{Schneider1989,
+abstract = {The authors present the dynamic control module of the Dynamic and Strategic Control of Cooperative Manipulators (DASCCOM) project at Stanford University's Aerospace Robotics Laboratory. First, the cooperative manipulation problem is analyzed from a systems perspective, and the desirable features of a control system for cooperative manipulation are discussed. Next, a control policy is developed that enforces a controlled impedance not of the individual arm endpoints, but of the manipulated object itself. A parallel implementation for a multiprocessor system is presented. The controller fully compensates for the system dynamics and directly controls the object internal forces. Most importantly, it presents a simple, powerful, intuitive interface to the strategic controller. Experimental results for a dual two-link arm robotic system are presented to verify the controllers performance, for both free-motion slews and environmental contact.},
+author = {Schneider, Stanley A. and Cannon, Robert H.},
+doi = {10.1109/robot.1989.100124},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/object-impedance-control-for-cooperative-manipulation-theory-and.pdf:pdf},
+mendeley-groups = {vkr_articles},
+pages = {1076--1083},
+title = {{Object impedance control for cooperative manipulation: theory and experimental results}},
+year = {1989}
+}
+
+@article{Dietrich2015,
+abstract = {One step on the way to approach human performance in robotics is to provide joint torque sensing and control for better interaction capabilities with the environment, and a large number of actuated degrees of freedom (DOFs) for improved versatility. However, the increasing complexity also raises the question of how to resolve the kinematic redundancy which is a direct consequence of the large number of DOFs. Here we give an overview of the most practical and frequently used torque control solutions based on null space projections. Two fundamental structures of task hierarchies are reviewed and compared, namely the successive and the augmented method. Then the projector itself is investigated in terms of its consistency. We analyze static, dynamic, and the new concept of stiffness consistency. In the latter case, stiffness information is used in the pseudoinversion instead of the inertia matrix. In terms of dynamic consistency, we generalize the weighting matrix from the classical operational space approach and show that an infinite number of weighting matrices exist to obtain dynamic consistency. In this context we also analyze another dynamically consistent null space projector with slightly different structure and properties. The redundancy resolutions are finally compared in several simulations and experiments. A thorough discussion of the theoretical and empirical results completes this survey.},
+author = {Dietrich, Alexander and Ott, Christian and Albu-Sch{\"{a}}ffer, Alin},
+doi = {10.1177/0278364914566516},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/NullspaceSurvey.pdf:pdf},
+issn = {17413176},
+journal = {International Journal of Robotics Research},
+keywords = {Torque control,dynamic consistency,null space projection,task hierarchy},
+mendeley-groups = {vkr_articles},
+number = {11},
+pages = {1385--1400},
+title = {{An overview of null space projections for redundant, torque-controlled robots}},
+volume = {34},
+year = {2015}
+}
+
+@article{Lin2017,
+abstract = {We propose a method for dual-arm manipulation of rigid objects, subject to external disturbance. The problem is formulated as a Cartesian impedance controller within a projected inverse dynamics framework. We use the constrained component of the controller to enforce contact and the unconstrained controller to accomplish the task with a desired 6-DOF impedance behaviour. Furthermore, the proposed method optimises the torque required to maintain contact, subject to unknown disturbances, and can do so without direct measurement of external force. The techniques are evaluated on a single-arm wiping a table and a dual-arm platform manipulating a rigid object of unknown mass and with human interaction. [1].},
+author = {Lin, Hsiu Chin and Smith, Joshua and Babarahmati, Keyhan Kouhkiloui and Dehio, Niels and Mistry, Michael},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/08461202.pdf:pdf},
+isbn = {9781538630815},
+issn = {23318422},
+journal = {arXiv},
+mendeley-groups = {vkr_articles},
+pages = {5421--5428},
+publisher = {IEEE},
+title = {{A Projected inverse dynamics approach for dual-arm cartesian impedance control}},
+year = {2017}
+}
+
+@article{Jiao2020,
+abstract = {In this paper, a novel adaptive hybrid impedance control for a dual-arm robot is proposed to cooperatively manipulate unkown objects. This adaptive hybrid control scheme could be employed to improve motion tracking and internal force regulation performance when dual-arm cooperative robot grasping an unknown object. The controller has a master-slave structure, and we investigate the master-slave structure in three levels. The first level is an absolute-relative motion controller satifying the closed-chain constraints. The second level introduces an adaptive impedance control with variable stiffness to regulate the internal force. The motion and force control signals are fused in the third level by a select matrix. To verify the effectiveness of the algorithm, a dual-arm robotic system is set up with two UR5 arms and the experimental results illustrate the performance and feasibility of the proposed control strategy.},
+author = {Jiao, Chunting and Wei, Xiong and Zhao, Han and Su, Xiaojie},
+doi = {10.1109/IECON43393.2020.9254995},
+file = {:media/files/Projects/VKR_Bac/vkr_articles/09254995.pdf:pdf},
+isbn = {9781728154145},
+journal = {IECON Proceedings (Industrial Electronics Conference)},
+keywords = {component,formatting,insert,style,styling},
+mendeley-groups = {vkr_articles},
+pages = {2754--2759},
+title = {{Adaptive Hybrid Impedance Control for A Dual-arm Robot Manipulating An Unknown Object}},
+volume = {2020-Octob},
+year = {2020}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @Book{Pup09,
   author =		 {Василий Пупкин and Эйнштейн, А.},
   title = 		 {\LaTeX для <<чайников>>},
@@ -17,4 +509,3 @@
   urldate = {25.01.2012},
   language =     "russian"
 }
-
